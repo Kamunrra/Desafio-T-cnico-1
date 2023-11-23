@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Somatório de Divisíveis</title>
+</head>
+<body>
+
+  <h1>Teste da Função</h1>
+
+  <label for="numeroInput">Informe um número inteiro positivo:</label>
+  <input type="number" id="numeroInput" min="1" step="1">
+
+  <button onclick="calcularSomatorio()">Calcular Somatório</button>
+
+  <p id="resultado">Resultado: </p>
+
+  <script>
+    function somatorioDivisiveis(numero) {
+      let soma = 0;
+      for (let i = 1; i < numero; i++) {
+        if (i % 3 === 0 || i % 5 === 0) {
+          soma += i;
+        }
+      }
+      return soma;
+    }
+
+    function calcularSomatorio() {
+      const numeroInput = document.getElementById('numeroInput');
+      const resultadoElement = document.getElementById('resultado');
+
+      const numero = parseInt(numeroInput.value);
+
+      if (isNaN(numero) || numero <= 0) {
+        resultadoElement.textContent = 'Por favor, informe um número inteiro positivo.';
+      } else {
+        const resultado = somatorioDivisiveis(numero);
+        resultadoElement.textContent = `Resultado: ${resultado}`;
+      }
+    }
+  </script>
+
+</body>
+</html>
