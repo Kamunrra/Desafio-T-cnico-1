@@ -10,5 +10,5 @@ O programa solicitará que você informe um número positivo, e depois mostrará
 Se você inserir algo que não seja um número inteiro positivo, ele imprimirá uma mensagem de erro.
 \\
 
-Estou fornecendo também o código necessário para criar uma página web simples, para que o usuário possa testar a aplicação.
--
+Estou fornecendo também o código necessário para criar uma página web simples, onde o usuário final consiga testar a aplicação.
+
