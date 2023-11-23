@@ -5,5 +5,5 @@ Tenha em mente que essas instruções assumem que você possui o ambiente de des
 
 Crie um novo arquivo JavaScript (por exemplo, teste.js) copie a implementação da função e salve.
 Abra um terminal e navegue até o diretório onde está o seu arquivo JavaScript.
-Execute o arquivo JavaScript usando o seguinte comando no terminal: "node teste.js"
+Execute o arquivo JavaScript usando o seguinte comando no terminal: "node teste.js".
 O programa solicitará que você informe um número, e depois mostrará o resultado do somatório no console.
